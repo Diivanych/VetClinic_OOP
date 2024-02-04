@@ -43,16 +43,16 @@ public class Animal {
     }
 
     public void toGo(boolean a) {
-        if(a) System.out.println("Пожалуй пройдусь");
-        else System.out.println("Ножки коротке");
+        if(a) System.out.println("Пожалуй пройдусь.");
+        else System.out.println("Не хожу.");
     }
     public void fly(boolean a) {
-        if(a) System.out.println("Пожалуй полетаю");
-        else System.out.println("Крылья коротке");
+        if(a) System.out.println("Пожалуй полетаю.");
+        else System.out.println("Не летаю.");
     }
     public void swim(boolean a) {
-        if(a) System.out.println("Пожалуй поплаваю");
-        else System.out.println("Ласты коротке");
+        if(a) System.out.println("Пожалуй поплаваю.");
+        else System.out.println("Не плаваю.");
     }
 
     public void lifeCycle() {

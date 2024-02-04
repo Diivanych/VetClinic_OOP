@@ -18,6 +18,7 @@ public class Main {
         Animal duck = new Animal("Скрудж", new Owner("Ирина Геннадьевна"),
                 LocalDate.of(2020, 11, 27), new Illness("Ожирние"));
 
+        System.out.println("Это пацент - Кот!");
         System.out.println("Имя пацента: " + cat.getNickName());
         System.out.println(cat.getOwner());
         System.out.println("Болезнь: " + cat.getIllness());
@@ -26,6 +27,7 @@ public class Main {
         cat.swim(false);
         System.out.println("===============================");
 
+        System.out.println("Это пацент - Рыбка!");
         System.out.println("Имя пацента: " + fish.getNickName());
         System.out.println(fish.getOwner());
         System.out.println("Болезнь: " + fish.getIllness());
@@ -34,6 +36,7 @@ public class Main {
         fish.swim(true);
         System.out.println("===============================");
 
+        System.out.println("Это пацент - Утка!");
         System.out.println("Имя пацента: " + duck.getNickName());
         System.out.println(duck.getOwner());
         System.out.println("Болезнь: " + duck.getIllness());
@@ -53,9 +56,10 @@ public class Main {
         cat.lifeCycle();
 
         Animal catty = new Cat();
+        Animal doggie = new Dog();
         Dog goodBoy = new Dog();
 
-        System.out.println(goodBoy.getType());
+        System.out.println(doggie.getType());
         System.out.println(catty.getType());
 
         System.out.println(catty);
