@@ -10,9 +10,7 @@ public class Owner {
 
     @Override
     public String toString() {
-        return "Owner{" +
-                "fullName='" + fullName + '\'' +
-                '}';
+        return "Имя хозяина: " + fullName;
     }
 }
 

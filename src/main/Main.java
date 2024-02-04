@@ -12,15 +12,39 @@ public class Main {
         Animal cat = new Animal("Солнышко", new Owner("Сергей Валерьевич"),
                 LocalDate.of(2021, 10, 05), new Illness("Лишай")); //Создаём экземпляр класса
 
+        Animal fish = new Animal("Немо", new Owner("Кирилл Иванович"),
+                LocalDate.of(2022, 6, 17), new Illness("Амнезия"));
+
+        Animal duck = new Animal("Скрудж", new Owner("Ирина Геннадьевна"),
+                LocalDate.of(2020, 11, 27), new Illness("Ожирние"));
+
+        System.out.println("Имя пацента: " + cat.getNickName());
         System.out.println(cat.getOwner());
-        System.out.println(cat.getNickName());
-        System.out.println("Болезнь:" + cat.getIllness());
+        System.out.println("Болезнь: " + cat.getIllness());
+        cat.toGo(true);
+        cat.fly (false);
+        cat.swim(false);
+        System.out.println("===============================");
 
-        System.out.println(cat.getNickName());
+        System.out.println("Имя пацента: " + fish.getNickName());
+        System.out.println(fish.getOwner());
+        System.out.println("Болезнь: " + fish.getIllness());
+        fish.toGo(false);
+        fish.fly (false);
+        fish.swim(true);
+        System.out.println("===============================");
 
-        cat.setIllness(new Illness(null));
+        System.out.println("Имя пацента: " + duck.getNickName());
+        System.out.println(duck.getOwner());
+        System.out.println("Болезнь: " + duck.getIllness());
+        duck.toGo(true);
+        duck.fly (true);
+        duck.swim(true);
+        System.out.println("===============================");
 
-        System.out.println("Болезнь:" + cat.getIllness());
+//        System.out.println(cat.getNickName());
+//        cat.setIllness(new Illness(null));
+//        System.out.println("Болезнь:" + cat.getIllness());
 
 
         Animal testAnimal = new Animal();

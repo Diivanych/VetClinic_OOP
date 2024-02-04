@@ -42,6 +42,19 @@ public class Animal {
         this.illness = illness;
     }
 
+    public void toGo(boolean a) {
+        if(a) System.out.println("Пожалуй пройдусь");
+        else System.out.println("Ножки коротке");
+    }
+    public void fly(boolean a) {
+        if(a) System.out.println("Пожалуй полетаю");
+        else System.out.println("Крылья коротке");
+    }
+    public void swim(boolean a) {
+        if(a) System.out.println("Пожалуй поплаваю");
+        else System.out.println("Ласты коротке");
+    }
+
     public void lifeCycle() {
         wakeUp("12:00");
         hunt();
